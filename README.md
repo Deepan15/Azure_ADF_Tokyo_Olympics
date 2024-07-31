@@ -15,8 +15,8 @@ The architecture of this data pipeline consists of the following Azure services:
 * Power BI for data visualization
 
 ## Project Process
-* Built a pipeline to extract tokyo olympics data from source a github server/webpage and load it into ADLS.
 * Used copy data activity from ADF to extract data from HTTP server(github) and load it into a raw zone in ADLS.
+* Built a pipeline to extract tokyo olympics data from source a github server/webpage and load it into ADLS.
 * Used Azure Databricks to perform transformations and load it into transformed zone in ADLS.
 * Created a lake database on synapse analytics pointiong out the ADLS transformed zone, so BI can serve/fetch the data from synapse analytics.
 * Used PowerBi to create a dashboard based on the data from ADLS Transformed zone.
